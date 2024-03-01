@@ -1,0 +1,140 @@
+.menu{
+	font-family: "Roboto";
+	background-color: black;
+	width: 15%;
+	height: 100%;
+	margin-top: -20px;
+	margin-right: 0;
+	margin-left: 85%;
+	color:white;
+	position: fixed;
+	z-index: 0;
+}
+#first{
+	margin-top: 60%;
+	margin-left: 20%
+}
+
+#first li{
+	list-style-type: none;
+}
+
+#first li h3{
+	margin-bottom: 30%;
+}
+
+#first li a {
+	text-decoration: none;
+	color:white;
+	font-weight: bold;
+	font-size: 20px;
+}
+#first li  :hover{
+	border-bottom: solid 1px;
+	transition:border-bottom 400ms linear;
+}
+#fists ul .active{
+	color: orange!important;
+}
+
+#social{
+	margin-top: 40%;
+	padding-left: 60px;
+}
+#social a{
+	padding-left: 10px;
+	color: white;
+}
+#github :hover{
+	color:orange;
+}
+#facebook :hover{
+	color: #0A46B2;
+}
+#twitter :hover{
+	color: #3395DA;
+}
+#google :hover{
+	color: #1BC12A;
+}
+#instagram :hover{
+	color: #C05E39;
+}
+#second{
+	margin-top: 10%;
+}
+#second li{
+	list-style-type: none;
+}
+#second li a{
+	text-decoration: none;
+	color: #8A8A8A;
+}
+
+#second li  :hover{
+	color: white;
+}
+
+.slide-menu{
+	position: fixed;
+	margin-top:4%;
+	margin-left: 94%;
+	background-color: black;
+	width: 35px;
+	height: 35px;
+	padding: 6px;
+	cursor: pointer;
+	z-index: 2;
+}
+#burger1{
+	-webkit-transform:rotate(45deg);
+	background-color: white;
+	height: 5px;
+	margin-bottom: 4px;
+	width":25px;
+	margin-top:7px;
+	position: adsolute;
+}
+
+#burger2{
+	background-color: white;
+	width: 90%;
+	height: 5px;
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+
+#burger3{
+	-webkit-transform:rotate(-45deg);
+	background-color: white;
+	width: 90%;
+	height: 5px;
+	width:25px;
+	margin-top:-20px;
+}
+
+#Carrousel-Inicio{
+	width: 85%;
+	margin-left: 0;
+	margin-right: auto;
+}
+.item.active a{
+	color:orange!important;
+}
+
+
+
+/*//////////Boton para subir//////////////////*/
+#sube{
+	position: fixed;
+	background-color: orange;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	border-radius: 20px;
+	text-align: center;
+	z-index: 2;
+	margin-left: 94%;
+	margin-top: 33%;
+	margin-bottom: auto;
+}

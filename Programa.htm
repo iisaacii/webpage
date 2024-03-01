@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script src="./Matrices_files/html5.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./Programa_files/css.css">
+	<link rel="stylesheet" href="./Programa_files/style.css">
+		
+	<title>Programa</title>	
+	
+	<link rel="stylesheet" id="ajax-load-more-css-css" href="./Programa_files/micss.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./Programa_files/bootstrap.css">
+	<style type="text/css">
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid black;
+  }
+  .boton_personalizado:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #ffffff;
+
+  }
+  </style>
+</head>
+
+
+
+
+<body class="home page page-id-5 page-template page-template-page-home-php"> 
+	<div id="collections" class="collections-container-inner clearfix">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="container pull-left">
+		    	<ul class="nav navbar-nav">
+		    		<li><h3><a href="./Introduccion.htm">INICIO</a></h3></li>
+		    	</ul>
+		    	<ul>
+				    <img id="logo" style="float:right" src="./Programa_files/fi-logo.png">	
+				</ul>
+		  </div>
+		</nav>
+		<div class="white-wrapper">
+			<div class="container ancho white-section-padding-top">
+				<div >
+						<div >
+							<h1 align="center">Programa computacional</h1>
+							<div class="div-line"></div>
+							<div class="content ancho main-intro">
+								<h2>
+									UTILIZACIÓN:
+								</h2>
+								<h3>
+									 Sitúa el cursor en la primera casilla de la matriz A e introduce el primer elemento. Al pulsar la tecla tabulador te permitirá ir pasando a la casilla siguiente. Tras introducir todos los elementos de las matrices A y B con sus signos pulsa el botón “Hallar producto” y el resultado se mostrará en las casillas del formulario inferior.
+								</h3>
+
+								<script >
+
+     var a=new Array(3);b=new Array(3);c=new Array(3)
+
+     function producto()
+
+     {
+
+      for(i=1;i<=3;i++)
+
+       {   a[i]=[0,0,0,0];b[i]= [0,0,0,0];c[i]= [0,0,0,0]
+
+            for(j=1;j<=3;j++)
+
+             {  a[i][j]=parseFloat(document.matriza[3*i+j-4].value)
+
+                 b[i][j]=parseFloat(document.matrizb[3*i+j-4].value)    }    }
+
+      for(i=1;i<=3;i++)
+
+       {   for(j=1;j<=3;j++)
+
+              { c[i][j]=0
+
+                     for(k=1;k<=3;k++)
+
+                       {c[i][j]=c[i][j]+a[i][k]*b[k][j]  }
+
+                document.matrizc[3*i+j-4].value=c[i][j]  }    }
+
+      }
+
+    </script>
+
+    Producto de matrices (3x3)
+
+<form name="matriza">
+
+A=<BR> <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+</form>
+
+<form name="matrizb">
+
+B=<BR> <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+            <a class="boton_personalizado" type="button" onClick=" producto()">Hallar producto</a>
+
+</form>
+
+ 
+
+<form name="matrizc">
+
+Matriz producto C=AxB<BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+  </form>
+
+  							<h2>
+							<center>VIDEO</center>
+							</h2>
+							<h3>
+							1.- Pequeño video explicando algunos ejercicios
+							<br>
+							<br>
+							</h3>
+							
+
+							<div class="divspoiler">
+                					<a class="boton_personalizado"  onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != &#39;&#39;) { this.parentNode.nextSibling.childNodes[0].style.display = &#39;&#39;; this.value = &#39;Ocultar&#39;; } else { this.parentNode.nextSibling.childNodes[0].style.display = &#39;none&#39;; this.value = &#39;Mostrar Solución&#39;; }">MOSTRAR VIDEO</a>
+             					 </div><div><div class="spoiler" style="display: none;">
+								<video controls width="640" height="480">
+  									<source src="./Programa_files/video.mp4" type="video/mp4">
+
+  									Tu navegador no implementa el elemento <code>video</code>.
+								</video>
+
+
+							</div></div><hr>
+							
+							</div>
+							
+						
+					<div class="row">
+					
+					<div class="col-lg-6"></div>
+					<h4>Explora el contenido</h4>
+								<div class="col-lg-6">
+									<ul class="pagination pagination-lg">
+										<li><a href="./Programa.htm">&lt;&lt;</a></li>
+  										<li><a href="./Programa.htm">1</a></li>
+  										
+									</ul>	
+								</div>
+					</div>
+				</div>
+							
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+	
+
+
+		<div class="sub-footer">
+		<div class="container">
+			<div class="six columns">
+				© Estructuras Discretas 2020-1
+			</div>
+			<div class="six columns">
+				Tema: Programa
+			</div>
+		</div>
+	</div> 
+	
+	 
+	 
+	
+
+</body></html>
